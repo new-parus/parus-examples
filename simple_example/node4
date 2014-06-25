@@ -1,0 +1,2 @@
+a=4;
+printf("In the node a=%d\n",a);

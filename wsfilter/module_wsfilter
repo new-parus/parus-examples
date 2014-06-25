@@ -1,0 +1,5 @@
+#!/bin/sh
+PARMS="-r dynamic "
+
+echo $PARMS
+exec -a ./parallel_wsfilter ./parallel_wsfilter  $PARMS $@

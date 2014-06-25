@@ -1,0 +1,435 @@
+<GRAPH_BEGIN>
+ header "header.grf" // Here lies all variable defenition
+ root ""
+ tail ""
+ num_nodes 10
+<NODES_BEGIN>
+ <NODE_BEGIN>
+  number           1 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 1 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           2 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 2 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           3 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 3 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+
+ <NODE_BEGIN>
+  number           4 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 4 )
+  head ""
+  body "sum.grf"
+  tail ""
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           5 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 5 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+
+ <NODE_BEGIN>
+  number           6 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 6 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           7 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 7 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           8 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 8 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           9 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 9 )
+  head ""
+  body "sum.grf"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           10 // NUMBER of this node */
+  type             1
+  weight           1
+  layer            2
+  num_input_edges  9
+  edges ( 1 2 3 4 5 6 7 8 9 )
+  num_output_edges 0
+  edges ( )
+  head ""
+  body "result.grf"
+  tail "" 
+ <NODE_END>
+<NODES_END>
+
+ num_edges 9
+
+<EDGES_BEGIN>
+
+ <EDGE_BEGIN>
+  number  1
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 1 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[1]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  2
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 2 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[2]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  3
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 3 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[3]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+
+<EDGE_BEGIN>
+  number  4
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 4 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[4]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  5
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 5 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[5]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  6
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 6 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[6]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+ 
+ <EDGE_BEGIN>
+  number  7
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 7 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[7]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  8
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 8 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[8]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+<EDGE_BEGIN>
+  number  9
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 9 )
+  num_recv_nodes 1
+  recv_nodes ( 10 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "sum"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "result[9]"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+   
+<EDGES_END>
+<GRAPH_END>
+

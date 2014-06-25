@@ -1,0 +1,6 @@
+for(i=0;i<LENGTH_VECTOR;i++)
+{
+ v1[i]=i;
+ v2[i]=LENGTH_VECTOR-i;
+}
+for(i=0;i<LENGTH_VECTOR;i++) sum+=v1[i]*v2[i];

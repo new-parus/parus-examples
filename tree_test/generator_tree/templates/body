@@ -1,0 +1,5 @@
+min=minimum(min_array,size);
+max=maximum(max_array,size);
+sum=array_sum(sum_array,size);
+
+printf("Node %d min=%lf max=%lf sum=%lf\n",px_node,min,max,sum);

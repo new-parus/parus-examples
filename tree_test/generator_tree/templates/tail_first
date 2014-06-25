@@ -1,0 +1,2 @@
+if(array!=NULL) free(array);
+array=NULL;

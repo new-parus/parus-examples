@@ -1,0 +1,23 @@
+<SCHEDULE_BEGIN>
+
+ num_processors 3
+
+<PROCESSOR_BEGIN>
+ name 1
+ num_nodes 2
+ nodes ( 1  4 )
+<PROCESSOR_END>
+
+<PROCESSOR_BEGIN>
+ name 2
+ num_nodes 1
+ nodes ( 2 )
+<PROCESSOR_END>
+
+<PROCESSOR_BEGIN>
+ name 3
+ num_nodes 2
+ nodes ( 3  5 )
+<PROCESSOR_END>
+
+<SCHEDULE_END>

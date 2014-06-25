@@ -1,0 +1,22 @@
+netcdf header {
+variables:
+	int file1 ;
+		file1:type = "in" ;
+		file1:dataid = "in.nc" ;
+		file1:name = "in.nc" ;
+	int file2 ;
+		file2:type = "out" ;
+		file2:dataid = "0" ;
+		file2:name = "out.nc" ;
+
+// global attributes:
+		:Cutoff = 1100 ;
+		:FilterType = 0 ;
+		:module = "wsfilter" ;
+		:host = "angel" ;
+data:
+
+ file1 = 0 ;
+
+ file2 = 0 ;
+}

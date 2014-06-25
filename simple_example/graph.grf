@@ -1,0 +1,208 @@
+<GRAPH_BEGIN>
+ header ""
+ root   ""
+ tail   ""
+ num_nodes 5
+<NODES_BEGIN>
+ <NODE_BEGIN>
+  number           1 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 1 )
+  head "head"
+  body "node1"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           2 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 2 )
+  head "head"
+  body "node2"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           3 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 3 )
+  head "head"
+  body "node3"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           4 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            1
+  num_input_edges  0
+  edges ( )
+  num_output_edges 1
+  edges ( 4 )
+  head "head"
+  body "node4"
+  tail "" 
+ <NODE_END>
+ 
+ <NODE_BEGIN>
+  number           5 // NUMBER of this node */
+  type             2
+  weight           3
+  layer            2
+  num_input_edges  4
+  edges ( 1 2 3 4 )
+  num_output_edges 0
+  edges ( )
+  head "head5"
+  body "node5"
+  tail "" 
+ <NODE_END>
+  
+<NODES_END>
+
+ num_edges 4
+
+<EDGES_BEGIN>
+
+ <EDGE_BEGIN>
+  number  1
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 1 )
+  num_recv_nodes 1
+  recv_nodes ( 5 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "a"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "r1"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+
+ <EDGE_BEGIN>
+  number  2
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 2 )
+  num_recv_nodes 1
+  recv_nodes ( 5 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "a"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "r2"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+ 
+ <EDGE_BEGIN>
+  number  3
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 3 )
+  num_recv_nodes 1
+  recv_nodes ( 5 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "a"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "r3"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+ 
+ <EDGE_BEGIN>
+  number  4
+  weight  1
+  type GRAPH_NONE
+  num_var 1
+  num_send_nodes 1
+  send_nodes   ( 4 )
+  num_recv_nodes 1
+  recv_nodes ( 5 )
+  <SEND_BEGIN>
+  
+   <CHUNK_BEGIN>
+    name         "a"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+ <SEND_END>
+ <RECIEVE_BEGIN>
+
+   <CHUNK_BEGIN>
+    name         "r4"
+    type     GRAPH_INT
+    left_offset  "0"
+    right_offset "1"
+   <CHUNK_END>
+
+  <RECIEVE_END>
+ <EDGE_END>
+<EDGES_END>
+ 
+<GRAPH_END>

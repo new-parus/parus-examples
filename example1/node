@@ -1,0 +1,3 @@
+printf("value a is %d value c is %d processor number %d\n",a,c,px_mpi_comm_rank);
+b=a;
+d=c;

@@ -1,0 +1,6 @@
+if(min_array!=NULL) free(min_array);
+if(max_array!=NULL) free(max_array);
+if(sum_array!=NULL) free(sum_array);
+min_array=NULL;
+max_array=NULL;
+sum_array=NULL;

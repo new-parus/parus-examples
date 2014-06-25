@@ -1,0 +1,2 @@
+int a,b,c,d;
+printf("a befoure recive a==%d c befoure recive a==%d, processor %d\n",a,c,px_mpi_comm_rank);

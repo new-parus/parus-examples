@@ -1,0 +1,65 @@
+<SCHEDULE_BEGIN>
+
+ num_processors 10
+
+ <PROCESSOR_BEGIN>
+  name 1
+  num_nodes 2
+  nodes ( 1 6 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 2
+  num_nodes 1
+  nodes ( 2 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 3
+  num_nodes 1
+  nodes ( 3 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 4
+  num_nodes 1
+  nodes ( 4 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 5
+  num_nodes 1
+  nodes ( 5 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 6
+  num_nodes 1
+  nodes ( 6 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 7
+  num_nodes 1
+  nodes ( 7 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 8
+  num_nodes 1
+  nodes ( 8 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 9
+  num_nodes 1
+  nodes ( 9 )
+ <PROCESSOR_END>
+
+ <PROCESSOR_BEGIN>
+  name 10
+  num_nodes 1
+  nodes ( 10 )
+ <PROCESSOR_END>
+
+<SCHEDULE_END>

@@ -1,0 +1,2 @@
+double Result_1[10*10], Left_1[10*10], Right_1[10*10];
+int i_1, j_1, k_1;

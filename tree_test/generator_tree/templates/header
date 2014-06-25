@@ -1,0 +1,50 @@
+#include <linealge.h>
+#include <stdlib.h>
+
+
+double minimum(double *array,int size);
+double maximum(double *array,int size);
+double array_sum(double *array,int size);
+
+double minimum(double *array,int size)
+{
+ double min;
+ int i;
+ 
+ min=array[0];
+ for(i=0;i<size;i++)
+ {
+  if(min>array[i]) min=array[i];
+ }
+ 
+ return min;
+ 
+}
+
+double maximum(double *array,int size)
+{
+ double max;
+ int i;
+ 
+ max=array[0];
+ for(i=0;i<size;i++)
+ {
+  if(max<array[i]) max=array[i];
+ }
+ 
+ return max;
+ 
+}
+
+double array_sum(double *array,int size)
+{
+ double sum=0;
+ int i;
+ 
+ for(i=0;i<size;i++)
+ {
+  sum+=array[i];
+ }
+ 
+ return sum;
+}

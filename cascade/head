@@ -1,0 +1,2 @@
+int a,b;
+printf("a befoure recive a==%d, processor %d\n",a,px_mpi_comm_rank);

@@ -1,0 +1,5 @@
+min=minimum(min_array,size);
+max=maximum(max_array,size);
+sum=array_sum(sum_array,size);
+
+printf("\nmin=%lf\nmax=%lf\nsum=%lf\n",min,max,sum);
